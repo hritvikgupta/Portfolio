@@ -1,0 +1,38 @@
+[
+    {
+      "image":  "/images/shopping.png",
+      "name":"Ecommerce Web-App",
+      "techStack":"React Js | Typescript",
+      "description": "Shopping-cart is a public repository by hritvikgupta, built with React, that simulates an online shopping experience. Explore the codebase to learn more.",
+      "githubLink": "https://github.com/user/project1"
+    },
+    {
+      "image":"/images/tasktracker.png",
+      "name":"Task Tracking website",
+      "techStack":"HTML5| Javascript | CSS3",
+      "description": "Task-Traker is a robust React application offering a sleek user interface for task management. It features interactive development, testing, and production modes for optimal performance",
+      "githubLink": "https://github.com/user/project2"
+    },
+    {
+        "image": "/images/todo.jpeg",
+        "name":"Todo List Application",
+        "techStack":"Android SDK| Kotlin | HILT",
+        "description": "To-Do-List, an Android app, simplifies task management with reminders and notifications. It uses MVVM architecture and elements like Room Database and Navigation Component. Compatible with Android 10+",
+        "githubLink": "https://github.com/user/project1"
+      },
+      {
+        "image": "/images/weather2.png",
+        "name":"Weather Application",
+        "techStack":"Android SDK| Kotlin | Open Weather API",
+        "description": "Weather Application is an Android app that provides real-time and 5-day forecast weather conditions for any city. it's an engaging mobile software development project.",
+        "githubLink": "https://github.com/user/project2"
+      },
+      {
+        "image":"/images/whatsapp.png",
+        "name":"Whats App Clone",
+        "techStack":"Android | Kotlin | Jetpack | Compose | HILT ",
+        "description": "WhatsApp Clone JetpackCompose is a Kotlin-based replication of WhatsApp, featuring chat, voice messages, calls, profile updates, and sync. Built with HILT, Firebase, Navigation Controller, and Jetpack Compose.",
+        "githubLink": "https://github.com/user/project1"
+      }
+  ]
+  

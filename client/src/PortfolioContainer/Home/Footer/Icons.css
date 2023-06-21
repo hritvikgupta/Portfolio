@@ -1,0 +1,26 @@
+.icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.icon-carousel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-link {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth scaling */
+}
+
+.icon-link:hover {
+    transform: scale(1.2); /* Scale the size of icon on hover */
+}

@@ -1,0 +1,106 @@
+*{
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.profile-background, .home-footer{
+    overflow: hidden;
+}
+.social-icons {
+    position: fixed;
+    top: 50%;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    background-color:var(--dark-orange);
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icon-container {
+    padding: 5rem; /* Increase the padding */
+  }
+  
+  .social-icons a {
+    margin-top: 1rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1rem; /* Increase the margin */
+  }
+  
+  
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: fit-content;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden; 
+    min-height: 100vh;
+    /* background-image: url(${backgroundImage}); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white; /* It will change the navbar color */
+    z-index: 999;
+}
+
+.nav-bar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar a:hover {
+    color: orange;
+}
+
+.profile-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    margin-top: 0em;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.profile{
+    /* background: linear-gradient(110deg, rgb(22, 27, 64) 50%, "#4BEE5" 50%); */
+
+}
+.home-footer{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.contact-footer{
+    width:80%;
+}
+.blogs-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

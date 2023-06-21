@@ -1,0 +1,22 @@
+[
+{
+    "image":"./Images/react.png",
+    "name":"Web Development With React JS",
+    "articleLink":"https://medium.com/@hgupt010/web-development-with-react-js-a-game-changer-for-building-interactive-uis-1bdf06f705d1"
+},
+{
+    "image":"./Images/nlp.jpeg",
+    "name":"Art of Natural Language Processing",
+    "articleLink":"https://medium.com/@hgupt010/exploring-the-art-of-natural-language-processing-a-voyage-into-the-world-of-ai-3cf2cc9a3e4d"
+},
+{
+    "image":"./Images/jetpack2.png",
+    "name":"Android Jetpack Compose",
+    "articleLink":"https://medium.com/@hgupt010/android-jetpack-compose-a-paradigm-shift-in-android-development-16f77af2060"
+},
+{
+    "image":"./Images/reactangular.png",
+    "name":"The Rise of MERN Stack in the Industry",
+    "articleLink":"https://medium.com/@hgupt010/reactjs-vs-angular-the-rise-of-mern-stack-in-the-industry-2fa9ea2aea8"
+}
+]

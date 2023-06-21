@@ -1,0 +1,278 @@
+/* Crousel.css */
+
+.carousel-container {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.carousel-inner {
+    width: 100%;
+    overflow: visible;
+    max-width: 80rem;
+}
+
+.carousel-item {
+    width: 100%;
+    overflow: visible;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item .active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item .row {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+}
+
+.carousel-item .row .col {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item .row .col img {
+    width: 100%;
+    height: fit-content;
+    margin-top: 1vw;
+    width: 95%;
+}
+
+.image-container {
+    transition: transform 0.5s ease-in-out;
+    opacity: 0.5;
+}
+
+.image-container.active {
+    transform: scale(2);
+    z-index: 2;
+    opacity: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-container img {
+    object-fit: cover;
+    height: 10vw;
+    width: 100%;
+}
+
+.subheadings {
+    color: black !important;
+    height: 1vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subheadings span {
+    color: Black !important;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+    font-weight: bold;
+}
+
+.card-container {
+    border: 1px solid #eee;
+    margin: 0.3em;
+    border-radius: 5px;
+    margin: 1em; /* larger margin to prevent overlap */
+    background-color: white;
+    transition: transform .2s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2vw;
+    opacity: 0.5;
+    transition: opacity .3s;
+    align-items: center;
+}
+
+.card-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container.active {
+    transform: scale(1.04);
+    opacity: 1;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-item .row .col img {
+        margin-top: 3vw;
+    }
+
+    .card-container img {
+        height: 15vw;
+    }
+
+    .subheadings {
+        height: 2vw;
+    }
+
+    .subheadings span {
+        margin-left: 4vw;
+        margin-bottom: 4vw;
+    }
+}
+
+/* Crousel.css */
+
+/* ... existing styles ... */
+
+/* footer styles */
+.footer-container {
+    margin-top: 2rem;
+    min-height: 100vh; /* change from height to min-height */
+}
+
+.footer-parent {
+    height: 100%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section {
+    height: auto; /* change from 50% to auto */
+    width: 80%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+.footer-section.icons{
+    width: 100%;
+}
+.subheadings {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.footer-crousel {
+    width: 80%;
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+.icons {
+    margin-top: 2rem;
+    margin-bottom: 1em;
+}
+
+.crousel-container {
+    margin-bottom: 1em;
+    width: 80%;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+/* responsive styles for smaller devices */
+@media screen and (max-width: 1024px) {
+    .footer-crousel,
+    .crousel-container {
+        width: 90%; /* adjust width for screens <= 1024px */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-section {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .subheadings {
+        margin-top: 0.5em;
+    }
+
+    .footer-crousel,
+    .crousel-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card-container {
+        margin: 0.5em; /* adjust for smaller screens */
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .card-container {
+        margin: 0.3em; /* adjust for even smaller screens */
+        font-size: 0.8em; /* decrease font size to avoid overlap */
+    }
+}
+@media screen and (max-width: 844px) {
+
+    .footer-section {
+        height: auto; /* change from 50% to auto */
+        width: 20%; 
+        height: 10%;
+    }
+
+    .carousel-item .row .col img{
+        padding: 0;
+        display: flex;
+        width: 20%;
+        height: 20px;
+        visibility: collapse;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-container {
+        width: 100%;
+        height: 5%;
+    }
+    .card-container img {
+        object-fit: contain;
+        height: 10vw;
+        width: 100%;
+        visibility: collapse;
+    }
+    .carousel-container {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .footer-crousel {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 2em;
+        padding: 1em;
+        border-radius: 2em;
+    }
+}

@@ -1,0 +1,91 @@
+.contact-container{
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    width: 100%;
+}
+.container-title{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+    align-items: center;
+}
+.container-title span{
+    margin-top: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    color:black !important;
+}
+.container-title .text{
+    font-size: 1em;
+    font-weight: normal;
+}
+.contact-parent {
+    display: flex;
+    width: 80%; /* You can adjust this as needed */
+    border: 2px solid black;
+    border-radius: 2em;
+    background-color: #3C3C3C;
+}
+
+.contact.map {
+    width: 50%;
+    height: 80%; /* Map covers 20% of the width */
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.details-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Form takes up full width of its parent .details-fillup */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.details-form label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2%;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.details-form label input{
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.details-form label input:focus{
+    border-color: #43BEE5;
+    box-shadow: 0 0 5px #43BEE5;
+}
+
+.contact.details-fillup{
+    width: 80%; /* Form's parent covers 80% of the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact.details-fillup label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.contact.details-fillup label input {
+    margin-left: 10px;
+}
