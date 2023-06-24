@@ -12,7 +12,10 @@
     width: 100%;
     overflow: visible;
     max-width: 80rem;
+    display: flex;
+    flex-wrap: wrap; /* Add this */
 }
+
 
 .carousel-item {
     width: 100%;
@@ -95,7 +98,7 @@
     border: 1px solid #eee;
     margin: 0.3em;
     border-radius: 5px;
-    margin: 1em; /* larger margin to prevent overlap */
+    margin: 0.5em; /* larger margin to prevent overlap */
     background-color: white;
     transition: transform .2s;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -120,25 +123,6 @@
 a {
     color: black;
     text-decoration: none;
-}
-
-@media screen and (max-width: 768px) {
-    .carousel-item .row .col img {
-        margin-top: 3vw;
-    }
-
-    .card-container img {
-        height: 15vw;
-    }
-
-    .subheadings {
-        height: 2vw;
-    }
-
-    .subheadings span {
-        margin-left: 4vw;
-        margin-bottom: 4vw;
-    }
 }
 
 /* Crousel.css */
@@ -176,13 +160,14 @@ a {
 }
 .subheadings {
     width: 100%;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 .footer-crousel {
     width: 80%;
     margin-bottom: 2em;
     padding: 1em;
+    margin-top: 2em;
     border-radius: 2em;
 }
 
@@ -194,85 +179,167 @@ a {
 .crousel-container {
     margin-bottom: 1em;
     width: 80%;
-    padding: 1em;
+    padding: 4em;
+    margin-top: 2em;
     border-radius: 2em;
 }
-
-/* responsive styles for smaller devices */
-@media screen and (max-width: 1024px) {
-    .footer-crousel,
-    .crousel-container {
-        width: 90%; /* adjust width for screens <= 1024px */
-    }
+.link{
+    margin-top: 3em;
 }
 
-@media screen and (max-width: 768px) {
-    .footer-section {
+@media screen and (min-width: 415px) and (max-width: 1024px) {
+    .footer-container{
+        margin-top: -10rem;
+    }
+    .footer-section{
+        width:50%; 
+        display:flex;
+        margin-left: 4em;
+        align-items: center;
         flex-direction: column;
-        padding: 1em;
+        justify-content: space-around;
     }
-
-    .subheadings {
-        margin-top: 0.5em;
+    .footer-crousel.images{
+        /* margin-top: 30%; */
+        margin-bottom:-1em;
+        margin-left: 2em;
+        
     }
-
-    .footer-crousel,
-    .crousel-container {
+    .card-container img{
+        display: none; /* hide the image */
+    }
+    .image-container {
+     
+        opacity:1;
+    }
+    .card-container{
+        opacity: 1;
+    }
+    .image-container.active {
+        opacity: 1;
+    }
+    .subheadings{
+        margin-left: -2em;
+        margin-top: 6em;
+        /* margin-bottom: 1em; */
+    }
+    .image-container img{
+        width: 30% !important;
+        height: 20% !important;
+    }
+    .footer-section.icons{
+        /* margin-top: 20%; */
+        width: 30%;
+        
+    }
+    .card-container{
+        width: 100%;
+        
+    }
+    .crousel-container{
+        width: 100%;
+        margin-top: -5em;
+    }
+    .row{
         width: 100%;
     }
-}
-
-@media screen and (max-width: 1024px) {
-    .card-container {
-        margin: 0.5em; /* adjust for smaller screens */
+    .link{
+        margin-top: 20%;
     }
-}
-
-@media screen and (max-width: 464px) {
-    .card-container {
-        margin: 0.3em; /* adjust for even smaller screens */
-        font-size: 0.8em; /* decrease font size to avoid overlap */
+    .card-container{
+        width: 80%;
     }
-}
-@media screen and (max-width: 844px) {
-
-    .footer-section {
-        height: auto; /* change from 50% to auto */
-        width: 20%; 
-        height: 10%;
-    }
-
-    .carousel-item .row .col img{
-        padding: 0;
+    .icons{
         display: flex;
-        width: 20%;
-        height: 20px;
-        visibility: collapse;
+        align-items: center;
         justify-content: center;
+
+    }
+    .footer-section.icons{
+        width:50%; 
+        display:flex;
         align-items: center;
     }
-    .card-container {
-        width: 100%;
-        height: 5%;
+}
+@media screen and (min-width: 1025px) and (max-width: 1400px){
+    .footer-section{
+        /* margin-top: -2em; */
     }
-    .card-container img {
-        object-fit: contain;
-        height: 10vw;
+   .footer-parent{
+    width: 950%;
+    margin-right: 2em;
+   }
+   .footer-section{
+    /* margin-left: -10em; */
+    margin-right: 2em;
+   }
+   .footer-crousel.images{
+    width: 100%;
+    margin-right: 1em;
+   }
+   .subheadings{
+    margin-left: 5em;
+   }
+   .link{
+    margin-top: 0em;
+   }
+   .card-container{
+    opacity: 1;
+    margin-right: 1em;
+   }
+   .image-container img{
+    width: 30% !important;
+    height: 20% !important;
+   }
+   
+}
+
+@media screen and (max-width: 414px){
+    .footer-container{
         width: 100%;
-        visibility: collapse;
     }
-    .carousel-container {
-        width: 100%;
-        padding: 0;
-        display: flex;
+    .footer-section{
+        width:40%; 
+        display:flex;
+        margin-top: 10em;
         align-items: center;
-        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        height: 10%;
+        margin-left: 5em;
+    }  
+    .subheadings{
+        margin-bottom: -4em;
     }
-    .footer-crousel {
+    .footer-container.images{
+        margin-top: -10rem;
+        margin-right: 10rem;
+    }
+    .images{
+        margin-right: 3rem;
+    }
+    .footer-crousel{
+        width: 90%;
+    }
+    .card-container{
+        margin-right: 10em;
+    }
+    .card-container img{
+        display: none; /* hide the image */
+    }
+    .card-container h2, .card-container p{
+        margin: 0; /* remove excessive margin, you can adjust to your preference */
+    }
+
+    .crousel-container{
         width: 100%;
-        height: fit-content;
-        margin-bottom: 2em;
-        padding: 1em;
-        border-radius: 2em;
+    }
+    .footer-section.icons{
+        width: 40%;
+        margin-top: 2rem;
+    }
+    .image-container{
+        width: 50%;
+        margin-left: 2em;
     }
 }

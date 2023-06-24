@@ -7,7 +7,7 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch('https://formsubmit.co/ajax/hritvik7654@gmail.com', {
+    fetch('https://formsubmit.co/ajax/674126af6728699d2b828814ccebea4f', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

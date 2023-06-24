@@ -10,6 +10,10 @@ import skill3 from '../../../assets/Home/skills/react.webp'
 import skill4 from '../../../assets/Home/skills/swift.webp'
 import skill5 from '../../../assets/Home/skills/tensorflow.webp'
 import skill6 from '../../../assets/Home/skills/xcode.webp'
+import skill7 from '../../../assets/Home/skills/mongo.png'
+import skill8 from '../../../assets/Home/skills/nodejs.png'
+import skill9 from '../../../assets/Home/skills/kotlin.png'
+import skill10 from '../../../assets/Home/skills/android.png'
 
 import React from 'react';
 import shapeImage from '../../../assets/Home/shape-bg.png';
@@ -19,7 +23,7 @@ import { SkillCrousel } from './SkillCrousel';
 import './Footer.css'; // make sure to import your css file here
 
 const images = [pic, pic1, pic2, pic3, pic4];
-const skills = [skill, skill1, skill2, skill3, skill4, skill5, skill6]
+const skills = [skill, skill1, skill2, skill3, skill4, skill5, skill6, skill7, skill8, skill9, skill10  ]
 
 const Footer = () => {
     return (
@@ -29,14 +33,14 @@ const Footer = () => {
                     <h1 className="subheadings">
                         <span >PROJECTS OVERVIEW</span>
                     </h1>
-                    <div className="footer-crousel">              
+                    <div className="footer-crousel images">              
                         <Crousel images={images}/>
                     </div>
                 </div>
                 <div className="footer-crousel icons">              
                     <div className="footer-section icons">
                         <h1 className="subheadings">
-                            <span>SKILLS</span>
+                            <span className='skills'>SKILLS</span>
                         </h1>
                         <div className="crousel-container">
                             <SkillCrousel images={skills}/>

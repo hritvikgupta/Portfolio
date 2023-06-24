@@ -89,3 +89,88 @@
 .contact.details-fillup label input {
     margin-left: 10px;
 }
+@media screen and (max-width: 414px) {
+    .contact-container{
+     flex-direction: column;
+     padding: 0px;
+     justify-content: center; /* Add this line */
+    }
+    .container-title {
+     width: 100%;
+     margin: 0; /* Remove margin from title */
+     padding: 1rem; /* Add some padding */
+     text-align: center; /* To center the text */
+    }
+    .container-title span{
+     font-size: small;
+    }
+    .contact.map{
+     display: none;
+    }
+    .contact-parent{
+        margin-left: 10em;
+         width: 100%;
+         margin: 0; /* Remove margin from parent */
+         padding: 1rem; /* Add some padding */
+    }
+    .contact.details-fillup{
+        margin-left: 1em;
+    }
+ }
+ 
+
+
+@media screen and (max-width: 1024px) {
+    .contact-container{
+        flex-direction: column;
+        padding: 0px;
+        justify-content: center; /* Add this line */
+       }
+       .container-title {
+        width: 100%;
+        margin: 0; /* Remove margin from title */
+        padding: 1rem; /* Add some padding */
+        text-align: center; /* To center the text */
+       }
+       .container-title span{
+        font-size: large;
+       }
+       .contact.map{
+        display: none;
+       }
+       .contact-parent{
+           margin-left: 10em;
+            width: 100%;
+            margin: 0; /* Remove margin from parent */
+            padding: 1rem; /* Add some padding */
+       }
+       .contact.details-fillup{
+           margin-left: 1em;
+       }
+}
+@media screen and (min-width: 1025px) and (max-width: 1400px){
+    .contact-container{
+        flex-direction: column;
+        padding: 0px;
+        justify-content: center; /* Add this line */
+       }
+       .container-title {
+        width: 100%;
+        margin: 0; /* Remove margin from title */
+        padding: 1rem; /* Add some padding */
+        text-align: center; /* To center the text */
+       }
+       .container-title span{
+        font-size: large;
+       }
+       
+       .contact-parent{
+           margin-left: 10em;
+            width: 100%;
+            margin: 0; /* Remove margin from parent */
+            padding: 1rem; /* Add some padding */
+       }
+       .contact.details-fillup{
+           margin-left: 1em;
+       }
+}

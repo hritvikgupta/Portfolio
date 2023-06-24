@@ -4,9 +4,8 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    /* margin-top: 5vw; */
     align-items: center;
-    margin-bottom: 2vw;
+    margin-bottom: 1em;
 }
 
 .footer-parent{
@@ -19,21 +18,21 @@
 
 .footer-parent .footer-crousel{
     max-width: 100%;
-    height: 5vw;
+    height: 3em;
 }
 
 .footer-crousel.icons {
-    margin-bottom: 2vw !important;
+    margin-bottom: 1em !important;
 }
 
 .footer-crousel.social {
-    margin: 2vw !important;
+    margin: 1em !important;
 }
 
 .footer-crousel{
-    height: 10vw;
+    height: 5em;
     width: 80%;
-    margin-top: 25vh;
+    margin-top: 12em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,27 +44,8 @@
     align-items: center;
 }
 
+/* ... Existing styles ... */
 
+/* ... existing styles ... */
+/* ... existing styles ... */
 
-@media screen and (max-width: 768px) {
-    .footer-container {
-        margin-top: 8vw;
-        margin-bottom: 3vw;
-    }
-
-    .footer-parent .footer-crousel {
-        height: 15vw;
-    }
-
-    .footer-crousel {
-        height: 15vw;
-    }
-
-    .subheadings {
-        height: 8vw;
-    }
-
-    .subheadings span {
-        margin-left: 4vw;
-    }
-}

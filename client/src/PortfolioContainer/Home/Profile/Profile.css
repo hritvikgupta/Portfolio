@@ -88,3 +88,15 @@
         padding: 1em;
     }
 }
+@media screen and (max-width: 414px) {
+    .profile-container{
+        padding: 2rem;
+        z-index: 1000;
+    }
+    .profile-details-container{
+        margin-top: 12rem !important;
+    }
+    .primary-btn{
+        height: 80%;
+    }
+}

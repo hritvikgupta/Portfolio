@@ -115,3 +115,25 @@
   text-align: center;
   margin-top: 0.5em;
 }
+
+@media screen and (max-width: 414px){
+    .blog-section{
+      width: 100%;
+    }
+    .card-container h2{
+      font-size: medium;
+    }
+    .card-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      /* margin-right: 5em; */
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1400px){
+  .blog-title{
+    margin-left: 2em;
+  }
+}

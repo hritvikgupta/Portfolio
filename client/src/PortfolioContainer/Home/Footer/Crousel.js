@@ -16,12 +16,13 @@ export const Crousel = () => {
     }, []);
     
     const responsive = {
-      superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 5 },
-      desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
-      tablet: { breakpoint: { max: 1024, min: 464 }, items: 2 },
-      mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
+        superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 5 },
+        desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
+        tablet: { breakpoint: { max: 1024, min: 820 }, items: 1 }, // Display 1 item between 820 and 1024 pixels
+        mobile: { breakpoint: { max: 820, min: 0 }, items: 1 }, // Display 1 item under 820 pixels
     };
-
+    
+    
     const handleAfterChange = (currentSlide) => {
       const newIndex = currentSlide + Math.floor(responsive.desktop.items / 2);
       setActiveIndex((newIndex % projects.length)+1);
@@ -51,7 +52,7 @@ export const Crousel = () => {
                                         <p style={{fontSize:".8em",  textAlign:"justify",overflow: "hidden"}}>{project.description}</p>
                                     </div>
                                     <div style={{marginTop:"1em",width: '100%', display: 'flex', justifyContent: 'center'}}>
-                                        <a href={project.githubLink}>
+                                        <a className= "link" href={project.githubLink}>
                                             <FaGithub size={24} />
                                         </a>
                                     </div>

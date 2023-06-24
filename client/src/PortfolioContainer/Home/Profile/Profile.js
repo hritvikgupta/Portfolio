@@ -12,19 +12,21 @@ const Profile = ({ contactRef }) => {
         <Container className="profile-container d-flex justify-content-center align-items-center" style={{ borderRadius: "5rem" }}>
             <Row className="w-100">
                 <Col md={6} className="profile-details-container">
-                    <span className="primary-text">
-                        <span className="highlighted-text welcome"> HI THERE! I AM </span>
-                        <span className="highlighted-text name">HRITVIK GUPTA</span>
+                                    <span className="primary-text">
+                        <span className="highlighted-text welcome"> Hi! I'm </span>
+                        <span className="highlighted-text name">Hritvik Gupta</span>,
                         <span className="highlighted-text description">
-                            A proficient Software developer with expertise in Web Frontend and Android application development with a passion for crafting seamless, interactive, and user-friendly experiences across multiple platforms.
-                            Equipped with a comprehensive skill set that includes proficiency in JavaScript, React, and Android development tools, I consistently deliver code that is clean, efficient, and adheres to industry best practices.
-                            Includeing my developing skills i have researched in Natural Language Processing and published papers in the same. 
+                            A dedicated Software Developer skilled in Web Frontend and Android app development. I hold a 
+                            <span className="highlighted-text" style={{color:"#ff6347 !important"}}> Master's degree in Computer Engineering from the University of California, Riverside</span>. 
+                            My expertise includes MERN Stack, JavaScript, Java, Kotlin and other Android and Web development tech stack. 
+                            Apart from coding, I've conducted sucessfull 
+                            <span className="highlighted-text"> researches in Natural Language Processing and have published papers in the field</span>.
                         </span>
                     </span>
 
                     <div className="profile-options">
                         <Button className="primary-btn" onClick={scrollToContact}>Hire me</Button>
-                        <Button className="highlighted-text-btn" href="HritvikResume.pdf" download="Hritvik HritvikResume.pdf">Get Resume</Button>
+                        <Button className="highlighted-text-btn" href="HritvikResume2.pdf" download="Hritvik HritvikResume2.pdf">Get Resume</Button>
                     </div>
                 </Col>
                 <Col md={6} className="profile-picture">
