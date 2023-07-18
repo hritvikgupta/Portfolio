@@ -1,4 +1,18 @@
 [
+  {
+    "image":  "/images/shopping-ekar.png",
+    "name":"Shopping Ecommerce Web App",
+    "techStack":"Typescript | MERN",
+    "description": "Crafted a MERN Stack E-commerce application with TypeScript, integrating user-friendly product management and secure authentication processes.",
+    "githubLink": "https://github.com/hritvikgupta/react-shopping-cart/tree/main"
+  },
+  {
+    "image":  "/images/travel-img.png",
+    "name":"Travel Guide web app",
+    "techStack":"React Js | Typescript",
+    "description": "Travel is a public repository by hritvikgupta, built with React, that simulates an online Location, Hotel and resturants search. Explore the codebase to learn more.",
+    "githubLink": "https://github.com/hritvikgupta/my-app"
+  },
     {
       "image":  "/images/shopping.png",
       "name":"Ecommerce Web-App",
@@ -20,13 +34,7 @@
         "description": "To-Do-List, an Android app, simplifies task management with reminders and notifications. It uses MVVM architecture and elements like Room Database and Navigation Component. Compatible with Android 10+",
         "githubLink": "https://github.com/user/project1"
       },
-      {
-        "image": "/images/weather2.png",
-        "name":"Weather Application",
-        "techStack":"Android SDK| Kotlin | Open Weather API",
-        "description": "Weather Application is an Android app that provides real-time and 5-day forecast weather conditions for any city. it's an engaging mobile software development project.",
-        "githubLink": "https://github.com/user/project2"
-      },
+      
       {
         "image":"/images/whatsapp.png",
         "name":"Whats App Clone",
